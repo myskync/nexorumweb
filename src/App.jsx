@@ -17,14 +17,25 @@ function App() {
       title: 'Městské občanské fórum',
       description: 'Komunitní platforma pro studenty vysokých škol k výměně znalostí',
       tech: ['PHP', 'JavaScript', 'MySQL'],
-      image: '👥'
+      image: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="9" cy="10" r="3"></circle>
+          <circle cx="17" cy="10" r="2"></circle>
+          <path d="M2 20c1.5-3 5-5 10-5s8.5 2 10 5"></path>
+        </svg>
+      )
     },
     {
       id: 2,
       title: 'Firemní Prezentace',
       description: 'Elegantní webové stránky pro moderní technologickou firmu',
       tech: ['React', 'Tailwind CSS', 'Vite'],
-      image: '💼'
+      image: (
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 3h-8v4h8V3z"></path>
+        </svg>
+      )
     },
   ]
 
@@ -348,7 +359,7 @@ function App() {
                   placeholder="Vaše zpráva" 
                   rows="5" 
                   className="form-input" 
-                  required
+                  required  
                 ></textarea>
                 <button type="submit" className="btn btn-primary">Odeslat zprávu</button>
               </form>
