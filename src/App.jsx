@@ -96,7 +96,7 @@ function App() {
             <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
               {isDarkMode ? (
                 // Ikonka Slunce (pro Dark Mode)
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="5"></circle>
                   <line x1="12" y1="1" x2="12" y2="3"></line>
                   <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -109,7 +109,7 @@ function App() {
                 </svg>
               ) : (
                 // Ikonka Měsíce (pro Light Mode)
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
               )}
@@ -147,22 +147,47 @@ function App() {
           <h2 className="section-title">Co děláme</h2>
           <div className="about-grid">
             <div className="about-card">
-              <div className="card-icon">🌐</div>
+              <div className="card-icon">
+                {/* Globe SVG (replaces 🌐) */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15 15 0 0 0 0 20"></path>
+                  <path d="M4.93 4.93c3.9 3.9 11.1 3.9 15 0"></path>
+                </svg>
+              </div>
               <h3>Webové Stránky</h3>
               <p>Vytváříme moderní, responzivní webové stránky s důrazem na uživatelský komfort a výkon</p>
             </div>
             <div className="about-card">
-              <div className="card-icon">👥</div>
+              <div className="card-icon">
+                {/* Users/Group SVG (replaces 👥) */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="9" cy="10" r="3"></circle>
+                  <circle cx="17" cy="10" r="2"></circle>
+                  <path d="M2 20c1.5-3 5-5 10-5s8.5 2 10 5"></path>
+                </svg>
+              </div>
               <h3>Sociální Sítě</h3>
               <p>Vyvíjíme malé až střední sociální platformy pro specifické komunity a projekty</p>
             </div>
-            <div className="about-card">
-              <div className="card-icon">📱</div>
+          <div className="about-card">
+              <div className="card-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12" y2="18"></line>
+                </svg>
+              </div>
               <h3>Web Aplikace</h3>
               <p>Budujeme interaktivní webové aplikace s pokročilými funkcemi a možnostmi</p>
             </div>
             <div className="about-card">
-              <div className="card-icon">⚡</div>
+              <div className="card-icon">
+                {/* Lightning SVG (replaces ⚡) */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="13 2 3 14 11 14 9 22 21 10 13 10 13 2"></polyline>
+                </svg>
+              </div>
               <h3>Moderní Technologie</h3>
               <p>Používáme nejnovější technologie jako React, Node.js, JSX a další</p>
             </div>
@@ -266,21 +291,36 @@ function App() {
           <div className="contact-grid">
             <div className="contact-info">
               <div className="contact-item">
-                <div className="contact-icon">📧</div>
+                <div className="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                </div>
                 <div>
                   <h4>Email</h4>
                   <a href="mailto:jakub.muzik@mendelova-stredni.cz">jakub.muzik@mendelova-stredni.cz</a>
                 </div>
               </div>
               <div className="contact-item">
-                <div className="contact-icon">📱</div>
+                <div className="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12" y2="18"></line>
+                  </svg>
+                </div>
                 <div>
                   <h4>Telefon</h4>
                   <a href="tel:+420739433570">+420 739 433 570</a>
                 </div>
               </div>
               <div className="contact-item">
-                <div className="contact-icon">📸</div>
+                <div className="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+                </div>
                 <div>
                   <h4>Instagram</h4>
                   <a href="https://instagram.com/nexorum.ja" target="_blank" rel="noopener noreferrer">@nexorum.ja</a>
