@@ -382,6 +382,16 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Ensure inline SVG icons use the dark purple color rather than default black */
+.card-icon svg,
+.project-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke: currentColor; /* SVGs use currentColor for stroke */
+  color: var(--purple-700);
+  fill: none;
+}
+
 .about-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
